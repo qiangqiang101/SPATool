@@ -1,0 +1,154 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SPA_Tool
+</name>
+</assembly>
+<members>
+<member name="T:SinglePlayerApartmentTool.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.american">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.apartment">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.car">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.chinese">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.clothing">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.french">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.garage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.german">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.italian">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.japanese">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.korean">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.mexican">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.michael">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.no_image_thumb">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.polish">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.portuguese">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.russian">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.spa_header_1024x229">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.spa_header_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.spanish">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SinglePlayerApartmentTool.My.Resources.Resources.vehicle">
+<summary>
+  Looks up a localized string similar to VehicleName &quot;&quot;
+VehicleModel &quot;&quot;
+PrimaryColor &quot;&quot;
+SecondaryColor &quot;&quot;
+PearlescentColor &quot;&quot;
+HasCustomPrimaryColor &quot;&quot;
+HasCustomSecondaryColor &quot;&quot;
+CustomPrimaryColorRed &quot;&quot;
+CustomPrimaryColorGreen &quot;&quot;
+CustomPrimaryColorBlue &quot;&quot;
+CustomSecondaryColorRed &quot;&quot;
+CustomSecondaryColorGreen &quot;&quot;
+CustomSecondaryColorBlue &quot;&quot;
+RimColor &quot;&quot;
+HasNeonLightBack &quot;&quot;
+HasNeonLightFront &quot;&quot;
+HasNeonLightLeft &quot;&quot;
+HasNeonLightRight &quot;&quot;
+NeonColorRed &quot;&quot;
+NeonColorGreen &quot;&quot;
+NeonColorBlue &quot;&quot;
+TyreSmokeColorRed &quot;&quot;
+TyreSmokeColorGreen &quot;&quot;
+T [rest of string was truncated]&quot;;.
+</summary>
+</member>
+</members>
+</doc>

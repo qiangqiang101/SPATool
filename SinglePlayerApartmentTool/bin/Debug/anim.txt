@@ -1,0 +1,50 @@
+if ((sub_eb708(g_129264._f1F) == 6) || (sub_eb708(g_129264._f1F) == 7)) {
+        if (sub_d11bb(l_239)) {
+            switch (a_0) {
+            case 10:
+                v_3 = "anim@safehouse@wheatgrass";
+                break;
+            case 6:
+                v_3 = "anim@safehouse@whisky";
+                break;
+            case 8:
+                v_3 = "anim@safehouse@wine";
+                break;
+            case 4:
+                v_3 = "anim@safehouse@bong";
+                break;
+            }
+        } else if ((sub_eb680(l_239) || sub_ebb27(l_239)) || sub_ebd41(l_239, -1)) {
+            switch (a_0) {
+            case 10:
+                v_3 = "anim@safehouse@wheatgrass";
+                break;
+            case 6:
+                v_3 = "anim@safehouse@whisky";
+                break;
+            case 8:
+                v_3 = "anim@safehouse@wine";
+                break;
+            case 4:
+                v_3 = "anim@safehouse@bong";
+                break;
+            }
+        } else { 
+            switch (a_0) {
+            case 3:
+                v_3 = "MP_SAFEHOUSEWHISKEY@";
+                break;
+            case 7:
+                v_3 = "MP_SAFEHOUSEWINE@";
+                break;
+            case 9:
+                v_3 = "MP_SAFEHOUSEWHEATGRASS@";
+                break;
+            case 4:
+                v_3 = "mp_safehousebong@";
+                break;
+            }
+        }
+    }
+    return v_3;
+}
