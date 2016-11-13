@@ -18,3 +18,22 @@ D:\GTAV Mods\SinglePlayerApartmentTool\SinglePlayerApartmentTool\obj\Release\Sin
 D:\GTAV Mods\SinglePlayerApartmentTool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmMenyooSave.resources
 D:\GTAV Mods\SinglePlayerApartmentTool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmDEdit.resources
 D:\GTAV Mods\SinglePlayerApartmentTool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmDealer.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\bin\Release\SPA_Tool.exe.config
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\Interop.SHDocVw.dll
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.vbproj.ResolveComReference.cache
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SPA_Tool.exe
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SPA_Tool.xml
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SPA_Tool.pdb
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\bin\Release\SPA_Tool.exe
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\bin\Release\SPA_Tool.pdb
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\bin\Release\SPA_Tool.xml
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.vbprojResolveAssemblyReference.cache
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmDEdit.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmDealer.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmMain.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmMenyoo.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmMenyooSave.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmSettings.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.frmSpg2Spa.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.Resources.resources
+C:\Users\Bartholomew\Documents\GitHub\SPATool\SinglePlayerApartmentTool\obj\Release\SinglePlayerApartmentTool.vbproj.GenerateResource.Cache

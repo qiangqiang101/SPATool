@@ -8,6 +8,13 @@
         btnSpg2Spa.ToolTipText = ReadCfgValue("TabConvertSPGToSPA", file)
         btnLang.Text = ReadCfgValue("TabLanguage", file)
         btnLang.ToolTipText = ReadCfgValue("TabLanguage", file)
+        btnWardrobe.Text = ReadCfgValue("TabWardrobe", file)
+        btnWardrobe.ToolTipText = ReadCfgValue("TabWardrobe", file)
+        btnShopping.Text = ReadCfgValue("TabShopping", file)
+        btnShopping.ToolTipText = ReadCfgValue("TabShopping", file)
+        btnMenyoo.Text = ReadCfgValue("TabMenyoo", file)
+        btnMenyoo.ToolTipText = ReadCfgValue("TabMenyoo", file)
+        'ReadCfgValue("", file)
     End Sub
 
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
@@ -130,7 +137,7 @@
         ChangeLanguage()
     End Sub
 
-    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles btnMenyoo.Click
         Dim NewForm As frmMenyoo = New frmMenyoo
         TabControl1.TabPages.Add(NewForm)
     End Sub

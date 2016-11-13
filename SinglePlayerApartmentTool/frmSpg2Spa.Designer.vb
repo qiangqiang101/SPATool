@@ -35,8 +35,8 @@ Partial Class frmSpg2Spa
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.lvGarage = New System.Windows.Forms.ListView()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.lvFloor = New System.Windows.Forms.ListView()
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.lvApartment = New System.Windows.Forms.ListView()
@@ -159,6 +159,11 @@ Partial Class frmSpg2Spa
         Me.lvGarage.UseCompatibleStateImageBehavior = False
         Me.lvGarage.View = System.Windows.Forms.View.Details
         '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Garage"
+        Me.ColumnHeader1.Width = 200
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -167,11 +172,6 @@ Partial Class frmSpg2Spa
         Me.Label1.Size = New System.Drawing.Size(105, 15)
         Me.Label1.TabIndex = 116
         Me.Label1.Text = "Select SPG Garage:"
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Garage"
-        Me.ColumnHeader1.Width = 200
         '
         'lvFloor
         '
@@ -259,6 +259,7 @@ Partial Class frmSpg2Spa
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Name = "frmSpg2Spa"
         Me.Text = "Transfer SPG vehicles to SPA"

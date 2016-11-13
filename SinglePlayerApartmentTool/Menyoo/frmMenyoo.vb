@@ -1,11 +1,32 @@
 ﻿Imports System.Xml
+Imports System.Threading
 
 Public Class frmMenyoo
 
     Public Directory As String = Nothing
+    Public MThread As Thread = New Thread(AddressOf StartThreading)
+
+    Private Sub ReadLanguage()
+        Dim file As String = (Application.StartupPath & "\Languages\" & My.Settings.Language & ".cfg")
+        FileToolStripMenuItem.Text = ReadCfgValue("ToolStripFile", file)
+        FileToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripFile", file)
+        NewToolStripMenuItem.Text = ReadCfgValue("ToolStripNew", file)
+        NewToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripNew", file)
+        OpenToolStripMenuItem.Text = ReadCfgValue("ToolStripOpen", file)
+        OpenToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripOpen", file)
+        SaveToolStripMenuItem.Text = ReadCfgValue("SaveButton", file)
+        SaveToolStripMenuItem.ToolTipText = ReadCfgValue("SaveButton", file)
+        StartReadToolStripMenuItem.Text = ReadCfgValue("ConvertButton", file)
+        StartReadToolStripMenuItem.Text = ReadCfgValue("ConvertButton", file)
+        AboutToolStripMenuItem.Text = ReadCfgValue("ToolStripAbout", file)
+        AboutToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripAbout", file)
+        Text = ReadCfgValue("TabMenyoo", file)
+        'ReadCfgValue("", file)
+    End Sub
 
     Private Sub frmMenyoo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForIllegalCrossThreadCalls = False
+        ReadLanguage()
         FolderBrowserDialog1.Description = "Please select a folder contains Menyoo Outfit..." & Environment.NewLine & "Example: 'MyCustomOutfit.xml'"
     End Sub
 
@@ -49,6 +70,15 @@ Public Class frmMenyoo
     End Sub
 
     Private Sub StartReadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StartReadToolStripMenuItem.Click
+        If MThread.ThreadState = ThreadState.Running Then
+            MsgBox("Please wait until Loading Complete.", MsgBoxStyle.Critical, Me.Text)
+            Exit Sub
+        Else
+            MThread.Start()
+        End If
+    End Sub
+
+    Private Sub StartThreading()
         Dim complete As Integer = 0, errors As Integer = 0
         tsProgress.Value = 0
         Select Case Directory
@@ -73,6 +103,6 @@ Public Class frmMenyoo
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("Currently only support Online Male & Female Outfits.", MsgBoxStyle.Information, "About")
+        MsgBox(ReadCfgValue("AboutMenyoo", Application.StartupPath & "\Languages\" & My.Settings.Language & ".cfg"), MsgBoxStyle.Information, "About")
     End Sub
 End Class

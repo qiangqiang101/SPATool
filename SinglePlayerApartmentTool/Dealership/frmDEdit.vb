@@ -44,6 +44,22 @@
         End Set
     End Property
 
+    Private Sub ReadLanguage()
+        Dim file As String = (Application.StartupPath & "\Languages\" & My.Settings.Language & ".cfg")
+        GroupBox1.Text = ReadCfgValue("GroupGeneral", file)
+        GroupBox2.Text = ReadCfgValue("GroupImage", file)
+        btnSave.Text = ReadCfgValue("SaveButton", file)
+        btnClose.Text = ReadCfgValue("CloseButton", file)
+        Label1.Text = ReadCfgValue("ListName", file)
+        Label2.Text = ReadCfgValue("ListPrice", file)
+        Label3.Text = ReadCfgValue("ListModel", file)
+        Label4.Text = ReadCfgValue("ListGXT", file)
+        Label5.Text = ReadCfgValue("ListBrand", file)
+        Label6.Text = ReadCfgValue("ListCategory", file)
+        Label7.Text = ReadCfgValue("ListDesc", file)
+        'ReadCfgValue("", file)
+    End Sub
+
     Private Sub pbImage_Click(sender As Object, e As EventArgs) Handles pbImage.Click
         If ofDialog.ShowDialog = DialogResult.OK Then
             Dim fs As IO.FileStream = New IO.FileStream(ofDialog.FileName, IO.FileMode.Open, IO.FileAccess.Read)
@@ -105,5 +121,9 @@
         Catch ex As Exception
             MsgBox(ex.Message & " " & ex.StackTrace, MsgBoxStyle.Critical, "Error")
         End Try
+    End Sub
+
+    Private Sub frmDEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ReadLanguage()
     End Sub
 End Class

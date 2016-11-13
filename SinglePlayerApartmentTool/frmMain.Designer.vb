@@ -29,7 +29,7 @@ Partial Class frmMain
         Me.btnSpg2Spa = New System.Windows.Forms.ToolStripButton()
         Me.btnWardrobe = New System.Windows.Forms.ToolStripButton()
         Me.btnShopping = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.btnMenyoo = New System.Windows.Forms.ToolStripButton()
         Me.btnLang = New System.Windows.Forms.ToolStripDropDownButton()
         Me.ChineseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AmericanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -62,7 +62,7 @@ Partial Class frmMain
         'ToolStrip1
         '
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnSettings, Me.btnSpg2Spa, Me.btnWardrobe, Me.btnShopping, Me.ToolStripButton4, Me.btnLang})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnSettings, Me.btnSpg2Spa, Me.btnWardrobe, Me.btnShopping, Me.btnMenyoo, Me.btnLang})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 131)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(857, 27)
@@ -101,13 +101,13 @@ Partial Class frmMain
         Me.btnShopping.Size = New System.Drawing.Size(116, 24)
         Me.btnShopping.Text = "Dealership Editor"
         '
-        'ToolStripButton4
+        'btnMenyoo
         '
-        Me.ToolStripButton4.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.michael
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(188, 24)
-        Me.ToolStripButton4.Text = "Menyoo Outfit Convert to SPA"
+        Me.btnMenyoo.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.michael
+        Me.btnMenyoo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnMenyoo.Name = "btnMenyoo"
+        Me.btnMenyoo.Size = New System.Drawing.Size(188, 24)
+        Me.btnMenyoo.Text = "Menyoo Outfit Convert to SPA"
         '
         'btnLang
         '
@@ -124,7 +124,7 @@ Partial Class frmMain
         Me.ChineseToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.chinese
         Me.ChineseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ChineseToolStripMenuItem.Name = "ChineseToolStripMenuItem"
-        Me.ChineseToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.ChineseToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.ChineseToolStripMenuItem.Tag = "chinese"
         Me.ChineseToolStripMenuItem.Text = "Chinese"
         '
@@ -133,7 +133,7 @@ Partial Class frmMain
         Me.AmericanToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.american
         Me.AmericanToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AmericanToolStripMenuItem.Name = "AmericanToolStripMenuItem"
-        Me.AmericanToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.AmericanToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.AmericanToolStripMenuItem.Tag = "american"
         Me.AmericanToolStripMenuItem.Text = "English"
         '
@@ -142,7 +142,7 @@ Partial Class frmMain
         Me.FrenchToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.french
         Me.FrenchToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.FrenchToolStripMenuItem.Name = "FrenchToolStripMenuItem"
-        Me.FrenchToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.FrenchToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.FrenchToolStripMenuItem.Tag = "french"
         Me.FrenchToolStripMenuItem.Text = "French"
         '
@@ -151,7 +151,7 @@ Partial Class frmMain
         Me.GermanToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.german
         Me.GermanToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.GermanToolStripMenuItem.Name = "GermanToolStripMenuItem"
-        Me.GermanToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.GermanToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.GermanToolStripMenuItem.Tag = "german"
         Me.GermanToolStripMenuItem.Text = "German"
         '
@@ -160,7 +160,7 @@ Partial Class frmMain
         Me.ItalianToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.italian
         Me.ItalianToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ItalianToolStripMenuItem.Name = "ItalianToolStripMenuItem"
-        Me.ItalianToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.ItalianToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.ItalianToolStripMenuItem.Tag = "italian"
         Me.ItalianToolStripMenuItem.Text = "Italian"
         '
@@ -169,7 +169,7 @@ Partial Class frmMain
         Me.JapaneseToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.japanese
         Me.JapaneseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.JapaneseToolStripMenuItem.Name = "JapaneseToolStripMenuItem"
-        Me.JapaneseToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.JapaneseToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.JapaneseToolStripMenuItem.Tag = "japanese"
         Me.JapaneseToolStripMenuItem.Text = "Japanese"
         '
@@ -178,7 +178,7 @@ Partial Class frmMain
         Me.KoreanToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.korean
         Me.KoreanToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.KoreanToolStripMenuItem.Name = "KoreanToolStripMenuItem"
-        Me.KoreanToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.KoreanToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.KoreanToolStripMenuItem.Tag = "korean"
         Me.KoreanToolStripMenuItem.Text = "Korean"
         '
@@ -187,7 +187,7 @@ Partial Class frmMain
         Me.MexicanToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.mexican
         Me.MexicanToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.MexicanToolStripMenuItem.Name = "MexicanToolStripMenuItem"
-        Me.MexicanToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.MexicanToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.MexicanToolStripMenuItem.Tag = "mexican"
         Me.MexicanToolStripMenuItem.Text = "Mexican"
         '
@@ -196,7 +196,7 @@ Partial Class frmMain
         Me.PolishToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.polish
         Me.PolishToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.PolishToolStripMenuItem.Name = "PolishToolStripMenuItem"
-        Me.PolishToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.PolishToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.PolishToolStripMenuItem.Tag = "polish"
         Me.PolishToolStripMenuItem.Text = "Polish"
         '
@@ -205,7 +205,7 @@ Partial Class frmMain
         Me.PortugueseToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.portuguese
         Me.PortugueseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.PortugueseToolStripMenuItem.Name = "PortugueseToolStripMenuItem"
-        Me.PortugueseToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.PortugueseToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.PortugueseToolStripMenuItem.Tag = "portuguese"
         Me.PortugueseToolStripMenuItem.Text = "Portuguese"
         '
@@ -214,7 +214,7 @@ Partial Class frmMain
         Me.RussianToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.russian
         Me.RussianToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RussianToolStripMenuItem.Name = "RussianToolStripMenuItem"
-        Me.RussianToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.RussianToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.RussianToolStripMenuItem.Tag = "russian"
         Me.RussianToolStripMenuItem.Text = "Russian"
         '
@@ -223,7 +223,7 @@ Partial Class frmMain
         Me.SpanishToolStripMenuItem.Image = Global.SinglePlayerApartmentTool.My.Resources.Resources.spanish
         Me.SpanishToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SpanishToolStripMenuItem.Name = "SpanishToolStripMenuItem"
-        Me.SpanishToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
+        Me.SpanishToolStripMenuItem.Size = New System.Drawing.Size(156, 26)
         Me.SpanishToolStripMenuItem.Tag = "spanish"
         Me.SpanishToolStripMenuItem.Text = "Spanish"
         '
@@ -269,7 +269,7 @@ Partial Class frmMain
     Friend WithEvents btnSpg2Spa As ToolStripButton
     Friend WithEvents btnWardrobe As ToolStripButton
     Friend WithEvents btnShopping As ToolStripButton
-    Friend WithEvents ToolStripButton4 As ToolStripButton
+    Friend WithEvents btnMenyoo As ToolStripButton
     Friend WithEvents TabControl1 As MdiTabControl.TabControl
     Friend WithEvents btnLang As ToolStripDropDownButton
     Friend WithEvents AmericanToolStripMenuItem As ToolStripMenuItem

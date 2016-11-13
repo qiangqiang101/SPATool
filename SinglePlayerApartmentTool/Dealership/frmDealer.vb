@@ -11,6 +11,31 @@
     Public ImagePathDir As String = Application.StartupPath & "\Shopping\Images\"
     Public items As New ListViewItem()
 
+    Private Sub ReadLanguage()
+        Dim file As String = (Application.StartupPath & "\Languages\" & My.Settings.Language & ".cfg")
+        Text = ReadCfgValue("TabShopping", file)
+        FileToolStripMenuItem.Text = ReadCfgValue("ToolStripFile", file)
+        FileToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripFile", file)
+        OpenToolStripMenuItem.Text = ReadCfgValue("ToolStripOpen", file)
+        OpenToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripOpen", file)
+        SaveToolStripMenuItem.Text = ReadCfgValue("SaveButton", file)
+        SaveToolStripMenuItem.ToolTipText = ReadCfgValue("SaveButton", file)
+        NewToolStripMenuItem.Text = ReadCfgValue("ToolStripNew", file)
+        NewToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripNew", file)
+        EditToolStripMenuItem1.Text = ReadCfgValue("ToolStripEdit", file)
+        EditToolStripMenuItem1.ToolTipText = ReadCfgValue("ToolStripEdit", file)
+        DeleteToolStripMenuItem1.Text = ReadCfgValue("ToolStripDelete", file)
+        DeleteToolStripMenuItem1.ToolTipText = ReadCfgValue("ToolStripDelete", file)
+        chName.Text = ReadCfgValue("ListName", file)
+        chPrice.Text = ReadCfgValue("ListPrice", file)
+        chModel.Text = ReadCfgValue("ListModel", file)
+        chGXT.Text = ReadCfgValue("ListGXT", file)
+        chBrand.Text = ReadCfgValue("ListBrand", file)
+        chCategory.Text = ReadCfgValue("ListCategory", file)
+        chDesc.Text = ReadCfgValue("ListDesc", file)
+        'ReadCfgValue("", file)
+    End Sub
+
     Private Sub tscbDealer_SelectedIndexChanged(sender As Object, e As EventArgs) Handles tscbDealer.SelectedIndexChanged
         lvCars.Items.Clear()
 
@@ -166,5 +191,9 @@
             Case "Warstock Cache & Carry"
                 WriteFiles(WarstockFile)
         End Select
+    End Sub
+
+    Private Sub frmDealer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ReadLanguage()
     End Sub
 End Class

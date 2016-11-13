@@ -1,20 +1,33 @@
 ﻿Imports System.Xml
+Imports System.Threading
 
 Public Class frmSpg2Spa
 
     Private settingFile As String = Application.StartupPath & "\setting.cfg"
     Public Directory As String = Nothing
+    Private SThread As Thread = New Thread(AddressOf StartBtnClick)
 
     Private Sub ReadLanguage()
         Dim file As String = (Application.StartupPath & "\Languages\" & My.Settings.Language & ".cfg")
-        Me.Text = ReadCfgValue("TabConvertSPGToSPA", file)
-        Me.StartReadToolStripMenuItem.Text = CFGread.ReadCfgValue("ConvertButton", file)
-        Me.OpenToolStripMenuItem.Text = CFGread.ReadCfgValue("BrowseButton", file)
-        Me.TabPage1.Text = CFGread.ReadCfgValue("LoggingLog", file)
+        Text = ReadCfgValue("TabConvertSPGToSPA", file)
+        StartReadToolStripMenuItem.Text = ReadCfgValue("ConvertButton", file)
+        StartReadToolStripMenuItem.ToolTipText = ReadCfgValue("ConvertButton", file)
+        OpenToolStripMenuItem.Text = ReadCfgValue("BrowseButton", file)
+        OpenToolStripMenuItem.ToolTipText = ReadCfgValue("BrowseButton", file)
+        TabPage1.Text = ReadCfgValue("LoggingLog", file)
+        FileToolStripMenuItem.Text = ReadCfgValue("ToolStripFile", file)
+        FileToolStripMenuItem.ToolTipText = ReadCfgValue("ToolStripFile", file)
+        Label1.Text = ReadCfgValue("SelectSPGGarage", file)
+        Label2.Text = ReadCfgValue("SelectSPAGarage", file)
+        ColumnHeader1.Text = ReadCfgValue("ListGarage", file)
+        ColumnHeader2.Text = ReadCfgValue("ListFloor", file)
+        ColumnHeader3.Text = ReadCfgValue("ListApartment", file)
+        'ReadCfgValue("", file)
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            CheckForIllegalCrossThreadCalls = False
             ReadLanguage()
             Dim spgPath As String = Application.StartupPath
             spgPath = spgPath.Replace("SinglePlayerApartment", "SinglePlayerGarage")
@@ -416,33 +429,42 @@ Public Class frmSpg2Spa
         ElseIf txtApartment.Text = Nothing Then
             MsgBox("Really Nigga?", MsgBoxStyle.Critical, "Error")
         Else
-            tsProgress.Value = 0
-            StartReadToolStripMenuItem.Enabled = False
-            txtLog.Clear()
-
-            Log("Creating Backup...")
-            MakeBackup()
-
-            For Each file As String In IO.Directory.GetFiles(Directory & "\" & txtGarage.Text & "\" & txtFloor.Text, "*.xml")
-                tsProgress.Maximum = IO.Directory.GetFiles(Directory & "\" & txtGarage.Text & "\" & txtFloor.Text, "*.xml").Length
-                If IO.File.Exists(file) Then
-                    tsProgress.Value += 1
-                    RenameData(file, IO.Path.GetFileNameWithoutExtension(file))
-                    GetData(file, IO.Path.GetFileNameWithoutExtension(file))
-                End If
-            Next
-            Log("Restoring data...")
-            RestoreBackup()
-            Log("Finalizing...")
-            RenameFilesBackToCFG()
-            Log("Removing temporary data...")
-            IO.Directory.Delete(Directory & "\" & txtGarage.Text & "\" & txtFloor.Text & "\Backup", True)
-
-            Log("Complete.")
-            'Process.Start(Directory)
-            MsgBox("Conversion Complete.", MsgBoxStyle.Information, "Successful")
-            StartReadToolStripMenuItem.Enabled = True
+            If SThread.ThreadState = ThreadState.Running Then
+                MsgBox("Please wait until Loading Complete.", MsgBoxStyle.Critical, Text)
+                Exit Sub
+            Else
+                SThread.Start()
+            End If
         End If
+    End Sub
+
+    Private Sub StartBtnClick()
+        tsProgress.Value = 0
+        StartReadToolStripMenuItem.Enabled = False
+        txtLog.Clear()
+
+        Log("Creating Backup...")
+        MakeBackup()
+
+        For Each file As String In IO.Directory.GetFiles(Directory & "\" & txtGarage.Text & "\" & txtFloor.Text, "*.xml")
+            tsProgress.Maximum = IO.Directory.GetFiles(Directory & "\" & txtGarage.Text & "\" & txtFloor.Text, "*.xml").Length
+            If IO.File.Exists(file) Then
+                tsProgress.Value += 1
+                RenameData(file, IO.Path.GetFileNameWithoutExtension(file))
+                GetData(file, IO.Path.GetFileNameWithoutExtension(file))
+            End If
+        Next
+        Log("Restoring data...")
+        RestoreBackup()
+        Log("Finalizing...")
+        RenameFilesBackToCFG()
+        Log("Removing temporary data...")
+        IO.Directory.Delete(Directory & "\" & txtGarage.Text & "\" & txtFloor.Text & "\Backup", True)
+
+        Log("Complete.")
+        'Process.Start(Directory)
+        MsgBox("Conversion Complete.", MsgBoxStyle.Information, "Successful")
+        StartReadToolStripMenuItem.Enabled = True
     End Sub
 
     Private Sub lvGarage_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lvGarage.SelectedIndexChanged
