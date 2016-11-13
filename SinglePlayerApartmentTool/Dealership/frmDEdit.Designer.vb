@@ -233,7 +233,7 @@ Partial Class frmDEdit
         '
         'ofDialog
         '
-        Me.ofDialog.Filter = "JPEG files|*.jpg"
+        Me.ofDialog.Filter = "JPG file|*.jpg|JPEG file|*.jpeg|GIF file|*.gif|BMP file|*.bmp|PNG file|*.png"
         '
         'frmDEdit
         '
