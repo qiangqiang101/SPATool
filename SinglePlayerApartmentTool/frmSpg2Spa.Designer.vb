@@ -60,7 +60,7 @@ Partial Class frmSpg2Spa
         Me.txtLog.Name = "txtLog"
         Me.txtLog.ReadOnly = True
         Me.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtLog.Size = New System.Drawing.Size(820, 98)
+        Me.txtLog.Size = New System.Drawing.Size(873, 98)
         Me.txtLog.TabIndex = 109
         '
         'FolderBrowserDialog1
@@ -71,7 +71,7 @@ Partial Class frmSpg2Spa
         '
         Me.DataGridView1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(433, 423)
+        Me.DataGridView1.Location = New System.Drawing.Point(486, 423)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(78, 64)
         Me.DataGridView1.TabIndex = 110
@@ -81,7 +81,7 @@ Partial Class frmSpg2Spa
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsProgress})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 515)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(858, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(911, 22)
         Me.StatusStrip1.TabIndex = 113
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -96,7 +96,7 @@ Partial Class frmSpg2Spa
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(858, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(911, 24)
         Me.MenuStrip1.TabIndex = 112
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -110,18 +110,18 @@ Partial Class frmSpg2Spa
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.OpenToolStripMenuItem.Text = "Browse"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(109, 6)
         '
         'StartReadToolStripMenuItem
         '
         Me.StartReadToolStripMenuItem.Name = "StartReadToolStripMenuItem"
-        Me.StartReadToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.StartReadToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.StartReadToolStripMenuItem.Text = "Start"
         '
         'TabControl1
@@ -132,7 +132,7 @@ Partial Class frmSpg2Spa
         Me.TabControl1.Location = New System.Drawing.Point(12, 380)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(834, 132)
+        Me.TabControl1.Size = New System.Drawing.Size(887, 132)
         Me.TabControl1.TabIndex = 114
         '
         'TabPage1
@@ -141,14 +141,15 @@ Partial Class frmSpg2Spa
         Me.TabPage1.Location = New System.Drawing.Point(4, 24)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(826, 104)
+        Me.TabPage1.Size = New System.Drawing.Size(879, 104)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Log"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'lvGarage
         '
-        Me.lvGarage.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.lvGarage.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lvGarage.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1})
         Me.lvGarage.FullRowSelect = True
         Me.lvGarage.Location = New System.Drawing.Point(12, 85)
@@ -175,7 +176,8 @@ Partial Class frmSpg2Spa
         '
         'lvFloor
         '
-        Me.lvFloor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.lvFloor.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lvFloor.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2})
         Me.lvFloor.FullRowSelect = True
         Me.lvFloor.Location = New System.Drawing.Point(247, 85)
@@ -193,13 +195,15 @@ Partial Class frmSpg2Spa
         '
         'lvApartment
         '
-        Me.lvApartment.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.lvApartment.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lvApartment.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader3})
         Me.lvApartment.FullRowSelect = True
         Me.lvApartment.Location = New System.Drawing.Point(482, 85)
         Me.lvApartment.MultiSelect = False
         Me.lvApartment.Name = "lvApartment"
-        Me.lvApartment.Size = New System.Drawing.Size(364, 289)
+        Me.lvApartment.Size = New System.Drawing.Size(417, 289)
         Me.lvApartment.TabIndex = 118
         Me.lvApartment.UseCompatibleStateImageBehavior = False
         Me.lvApartment.View = System.Windows.Forms.View.Details
@@ -236,17 +240,19 @@ Partial Class frmSpg2Spa
         '
         'txtApartment
         '
+        Me.txtApartment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtApartment.Location = New System.Drawing.Point(482, 56)
         Me.txtApartment.Name = "txtApartment"
         Me.txtApartment.ReadOnly = True
-        Me.txtApartment.Size = New System.Drawing.Size(364, 23)
+        Me.txtApartment.Size = New System.Drawing.Size(417, 23)
         Me.txtApartment.TabIndex = 122
         '
         'frmSpg2Spa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(858, 537)
+        Me.ClientSize = New System.Drawing.Size(911, 537)
         Me.Controls.Add(Me.txtApartment)
         Me.Controls.Add(Me.txtFloor)
         Me.Controls.Add(Me.txtGarage)

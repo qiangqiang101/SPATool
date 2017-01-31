@@ -23,6 +23,8 @@ Partial Class frmSettings
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cmbPhoneContact = New System.Windows.Forms.ComboBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.cbXBOX2 = New System.Windows.Forms.ComboBox()
         Me.cbXBOX = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
@@ -113,6 +115,8 @@ Partial Class frmSettings
         'Panel1
         '
         Me.Panel1.AutoScroll = True
+        Me.Panel1.Controls.Add(Me.cmbPhoneContact)
+        Me.Panel1.Controls.Add(Me.Label17)
         Me.Panel1.Controls.Add(Me.cbXBOX2)
         Me.Panel1.Controls.Add(Me.cbXBOX)
         Me.Panel1.Controls.Add(Me.Label22)
@@ -145,8 +149,27 @@ Partial Class frmSettings
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel1.Size = New System.Drawing.Size(843, 596)
+        Me.Panel1.Size = New System.Drawing.Size(962, 625)
         Me.Panel1.TabIndex = 2
+        '
+        'cmbPhoneContact
+        '
+        Me.cmbPhoneContact.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbPhoneContact.FormattingEnabled = True
+        Me.cmbPhoneContact.Items.AddRange(New Object() {"True", "False"})
+        Me.cmbPhoneContact.Location = New System.Drawing.Point(179, 209)
+        Me.cmbPhoneContact.Name = "cmbPhoneContact"
+        Me.cmbPhoneContact.Size = New System.Drawing.Size(108, 23)
+        Me.cmbPhoneContact.TabIndex = 71
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(6, 212)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(86, 15)
+        Me.Label17.TabIndex = 72
+        Me.Label17.Text = "Phone Contact"
         '
         'cbXBOX2
         '
@@ -180,7 +203,7 @@ Partial Class frmSettings
         'lblVolumePercentage
         '
         Me.lblVolumePercentage.AutoSize = True
-        Me.lblVolumePercentage.Location = New System.Drawing.Point(439, 212)
+        Me.lblVolumePercentage.Location = New System.Drawing.Point(439, 241)
         Me.lblVolumePercentage.Name = "lblVolumePercentage"
         Me.lblVolumePercentage.Size = New System.Drawing.Size(29, 15)
         Me.lblVolumePercentage.TabIndex = 59
@@ -189,7 +212,7 @@ Partial Class frmSettings
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(6, 212)
+        Me.Label21.Location = New System.Drawing.Point(6, 241)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(48, 15)
         Me.Label21.TabIndex = 58
@@ -204,7 +227,7 @@ Partial Class frmSettings
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.numMichael)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 531)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 560)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(569, 58)
         Me.GroupBox1.TabIndex = 10
@@ -271,7 +294,7 @@ Partial Class frmSettings
         '
         'tbVolume
         '
-        Me.tbVolume.Location = New System.Drawing.Point(179, 209)
+        Me.tbVolume.Location = New System.Drawing.Point(179, 238)
         Me.tbVolume.Maximum = 100
         Me.tbVolume.Name = "tbVolume"
         Me.tbVolume.Size = New System.Drawing.Size(254, 45)
@@ -324,9 +347,9 @@ Partial Class frmSettings
         Me.GroupBox2.Controls.Add(Me.cbDPH)
         Me.GroupBox2.Controls.Add(Me.cb4IW)
         Me.GroupBox2.Controls.Add(Me.cb3AS)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 260)
+        Me.GroupBox2.Location = New System.Drawing.Point(6, 289)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(825, 265)
+        Me.GroupBox2.Size = New System.Drawing.Size(944, 265)
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Apartments Enable/Disable"
@@ -334,7 +357,7 @@ Partial Class frmSettings
         'cb0112SRD
         '
         Me.cb0112SRD.AutoSize = True
-        Me.cb0112SRD.Location = New System.Drawing.Point(639, 137)
+        Me.cb0112SRD.Location = New System.Drawing.Point(759, 137)
         Me.cb0112SRD.Name = "cb0112SRD"
         Me.cb0112SRD.Size = New System.Drawing.Size(150, 19)
         Me.cb0112SRD.TabIndex = 58
@@ -344,7 +367,7 @@ Partial Class frmSettings
         'cbGA
         '
         Me.cbGA.AutoSize = True
-        Me.cbGA.Location = New System.Drawing.Point(639, 112)
+        Me.cbGA.Location = New System.Drawing.Point(759, 112)
         Me.cbGA.Name = "cbGA"
         Me.cbGA.Size = New System.Drawing.Size(124, 19)
         Me.cbGA.TabIndex = 57
@@ -354,7 +377,7 @@ Partial Class frmSettings
         'cbPB
         '
         Me.cbPB.AutoSize = True
-        Me.cbPB.Location = New System.Drawing.Point(639, 87)
+        Me.cbPB.Location = New System.Drawing.Point(759, 87)
         Me.cbPB.Name = "cbPB"
         Me.cbPB.Size = New System.Drawing.Size(115, 19)
         Me.cbPB.TabIndex = 56
@@ -364,7 +387,7 @@ Partial Class frmSettings
         'cbZA
         '
         Me.cbZA.AutoSize = True
-        Me.cbZA.Location = New System.Drawing.Point(639, 62)
+        Me.cbZA.Location = New System.Drawing.Point(759, 62)
         Me.cbZA.Name = "cbZA"
         Me.cbZA.Size = New System.Drawing.Size(116, 19)
         Me.cbZA.TabIndex = 55
@@ -374,7 +397,7 @@ Partial Class frmSettings
         'cb4584PD
         '
         Me.cb4584PD.AutoSize = True
-        Me.cb4584PD.Location = New System.Drawing.Point(490, 237)
+        Me.cb4584PD.Location = New System.Drawing.Point(581, 237)
         Me.cb4584PD.Name = "cb4584PD"
         Me.cb4584PD.Size = New System.Drawing.Size(131, 19)
         Me.cb4584PD.TabIndex = 53
@@ -384,7 +407,7 @@ Partial Class frmSettings
         'cb4401PD
         '
         Me.cb4401PD.AutoSize = True
-        Me.cb4401PD.Location = New System.Drawing.Point(490, 212)
+        Me.cb4401PD.Location = New System.Drawing.Point(581, 212)
         Me.cb4401PD.Name = "cb4401PD"
         Me.cb4401PD.Size = New System.Drawing.Size(131, 19)
         Me.cb4401PD.TabIndex = 52
@@ -394,7 +417,7 @@ Partial Class frmSettings
         'cbSR
         '
         Me.cbSR.AutoSize = True
-        Me.cbSR.Location = New System.Drawing.Point(490, 187)
+        Me.cbSR.Location = New System.Drawing.Point(581, 187)
         Me.cbSR.Name = "cbSR"
         Me.cbSR.Size = New System.Drawing.Size(106, 19)
         Me.cbSR.TabIndex = 51
@@ -404,7 +427,7 @@ Partial Class frmSettings
         'cbHA
         '
         Me.cbHA.AutoSize = True
-        Me.cbHA.Location = New System.Drawing.Point(490, 162)
+        Me.cbHA.Location = New System.Drawing.Point(581, 162)
         Me.cbHA.Name = "cbHA"
         Me.cbHA.Size = New System.Drawing.Size(122, 19)
         Me.cbHA.TabIndex = 50
@@ -414,7 +437,7 @@ Partial Class frmSettings
         'cbTR
         '
         Me.cbTR.AutoSize = True
-        Me.cbTR.Location = New System.Drawing.Point(490, 137)
+        Me.cbTR.Location = New System.Drawing.Point(581, 137)
         Me.cbTR.Name = "cbTR"
         Me.cbTR.Size = New System.Drawing.Size(84, 19)
         Me.cbTR.TabIndex = 49
@@ -424,7 +447,7 @@ Partial Class frmSettings
         'cb2143LLB
         '
         Me.cb2143LLB.AutoSize = True
-        Me.cb2143LLB.Location = New System.Drawing.Point(490, 112)
+        Me.cb2143LLB.Location = New System.Drawing.Point(581, 112)
         Me.cb2143LLB.Name = "cb2143LLB"
         Me.cb2143LLB.Size = New System.Drawing.Size(143, 19)
         Me.cb2143LLB.TabIndex = 48
@@ -434,7 +457,7 @@ Partial Class frmSettings
         'cbSVS
         '
         Me.cbSVS.AutoSize = True
-        Me.cbSVS.Location = New System.Drawing.Point(490, 87)
+        Me.cbSVS.Location = New System.Drawing.Point(581, 87)
         Me.cbSVS.Name = "cbSVS"
         Me.cbSVS.Size = New System.Drawing.Size(133, 19)
         Me.cbSVS.TabIndex = 47
@@ -444,7 +467,7 @@ Partial Class frmSettings
         'cb1237PS
         '
         Me.cb1237PS.AutoSize = True
-        Me.cb1237PS.Location = New System.Drawing.Point(490, 62)
+        Me.cb1237PS.Location = New System.Drawing.Point(581, 62)
         Me.cb1237PS.Name = "cb1237PS"
         Me.cb1237PS.Size = New System.Drawing.Size(139, 19)
         Me.cb1237PS.TabIndex = 46
@@ -454,7 +477,7 @@ Partial Class frmSettings
         'cb1162PS
         '
         Me.cb1162PS.AutoSize = True
-        Me.cb1162PS.Location = New System.Drawing.Point(490, 37)
+        Me.cb1162PS.Location = New System.Drawing.Point(581, 37)
         Me.cb1162PS.Name = "cb1162PS"
         Me.cb1162PS.Size = New System.Drawing.Size(119, 19)
         Me.cb1162PS.TabIndex = 45
@@ -464,7 +487,7 @@ Partial Class frmSettings
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(639, 19)
+        Me.Label16.Location = New System.Drawing.Point(759, 19)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(117, 15)
         Me.Label16.TabIndex = 39
@@ -473,7 +496,7 @@ Partial Class frmSettings
         'cbBDP
         '
         Me.cbBDP.AutoSize = True
-        Me.cbBDP.Location = New System.Drawing.Point(326, 237)
+        Me.cbBDP.Location = New System.Drawing.Point(383, 237)
         Me.cbBDP.Name = "cbBDP"
         Me.cbBDP.Size = New System.Drawing.Size(127, 19)
         Me.cbBDP.TabIndex = 44
@@ -483,7 +506,7 @@ Partial Class frmSettings
         'cbSA
         '
         Me.cbSA.AutoSize = True
-        Me.cbSA.Location = New System.Drawing.Point(326, 212)
+        Me.cbSA.Location = New System.Drawing.Point(383, 212)
         Me.cbSA.Name = "cbSA"
         Me.cbSA.Size = New System.Drawing.Size(137, 19)
         Me.cbSA.TabIndex = 43
@@ -493,7 +516,7 @@ Partial Class frmSettings
         'cb0604LLB
         '
         Me.cb0604LLB.AutoSize = True
-        Me.cb0604LLB.Location = New System.Drawing.Point(326, 187)
+        Me.cb0604LLB.Location = New System.Drawing.Point(383, 187)
         Me.cb0604LLB.Name = "cb0604LLB"
         Me.cb0604LLB.Size = New System.Drawing.Size(143, 19)
         Me.cb0604LLB.TabIndex = 42
@@ -503,7 +526,7 @@ Partial Class frmSettings
         'cbSMMD
         '
         Me.cbSMMD.AutoSize = True
-        Me.cbSMMD.Location = New System.Drawing.Point(326, 162)
+        Me.cbSMMD.Location = New System.Drawing.Point(383, 162)
         Me.cbSMMD.Name = "cbSMMD"
         Me.cbSMMD.Size = New System.Drawing.Size(158, 19)
         Me.cbSMMD.TabIndex = 41
@@ -513,7 +536,7 @@ Partial Class frmSettings
         'cbSRD
         '
         Me.cbSRD.AutoSize = True
-        Me.cbSRD.Location = New System.Drawing.Point(326, 137)
+        Me.cbSRD.Location = New System.Drawing.Point(383, 137)
         Me.cbSRD.Name = "cbSRD"
         Me.cbSRD.Size = New System.Drawing.Size(150, 19)
         Me.cbSRD.TabIndex = 40
@@ -523,7 +546,7 @@ Partial Class frmSettings
         'cb0184MR
         '
         Me.cb0184MR.AutoSize = True
-        Me.cb0184MR.Location = New System.Drawing.Point(326, 112)
+        Me.cb0184MR.Location = New System.Drawing.Point(383, 112)
         Me.cb0184MR.Name = "cb0184MR"
         Me.cb0184MR.Size = New System.Drawing.Size(118, 19)
         Me.cb0184MR.TabIndex = 39
@@ -533,7 +556,7 @@ Partial Class frmSettings
         'cbBCA
         '
         Me.cbBCA.AutoSize = True
-        Me.cbBCA.Location = New System.Drawing.Point(326, 87)
+        Me.cbBCA.Location = New System.Drawing.Point(383, 87)
         Me.cbBCA.Name = "cbBCA"
         Me.cbBCA.Size = New System.Drawing.Size(139, 19)
         Me.cbBCA.TabIndex = 38
@@ -543,7 +566,7 @@ Partial Class frmSettings
         'cbCA
         '
         Me.cbCA.AutoSize = True
-        Me.cbCA.Location = New System.Drawing.Point(326, 62)
+        Me.cbCA.Location = New System.Drawing.Point(383, 62)
         Me.cbCA.Name = "cbCA"
         Me.cbCA.Size = New System.Drawing.Size(135, 19)
         Me.cbCA.TabIndex = 37
@@ -553,7 +576,7 @@ Partial Class frmSettings
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(323, 19)
+        Me.Label15.Location = New System.Drawing.Point(388, 19)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(140, 15)
         Me.Label15.TabIndex = 30
@@ -562,7 +585,7 @@ Partial Class frmSettings
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(143, 19)
+        Me.Label14.Location = New System.Drawing.Point(165, 19)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(69, 15)
         Me.Label14.TabIndex = 29
@@ -580,7 +603,7 @@ Partial Class frmSettings
         'cb3655
         '
         Me.cb3655.AutoSize = True
-        Me.cb3655.Location = New System.Drawing.Point(141, 237)
+        Me.cb3655.Location = New System.Drawing.Point(163, 237)
         Me.cb3655.Name = "cb3655"
         Me.cb3655.Size = New System.Drawing.Size(134, 19)
         Me.cb3655.TabIndex = 35
@@ -590,7 +613,7 @@ Partial Class frmSettings
         'cb3677
         '
         Me.cb3677.AutoSize = True
-        Me.cb3677.Location = New System.Drawing.Point(141, 212)
+        Me.cb3677.Location = New System.Drawing.Point(163, 212)
         Me.cb3677.Name = "cb3677"
         Me.cb3677.Size = New System.Drawing.Size(161, 19)
         Me.cb3677.TabIndex = 34
@@ -600,7 +623,7 @@ Partial Class frmSettings
         'cb2045
         '
         Me.cb2045.AutoSize = True
-        Me.cb2045.Location = New System.Drawing.Point(141, 187)
+        Me.cb2045.Location = New System.Drawing.Point(163, 187)
         Me.cb2045.Name = "cb2045"
         Me.cb2045.Size = New System.Drawing.Size(168, 19)
         Me.cb2045.TabIndex = 33
@@ -610,7 +633,7 @@ Partial Class frmSettings
         'cb2044
         '
         Me.cb2044.AutoSize = True
-        Me.cb2044.Location = New System.Drawing.Point(141, 162)
+        Me.cb2044.Location = New System.Drawing.Point(163, 162)
         Me.cb2044.Name = "cb2044"
         Me.cb2044.Size = New System.Drawing.Size(168, 19)
         Me.cb2044.TabIndex = 32
@@ -620,7 +643,7 @@ Partial Class frmSettings
         'cb2117
         '
         Me.cb2117.AutoSize = True
-        Me.cb2117.Location = New System.Drawing.Point(141, 137)
+        Me.cb2117.Location = New System.Drawing.Point(163, 137)
         Me.cb2117.Name = "cb2117"
         Me.cb2117.Size = New System.Drawing.Size(118, 19)
         Me.cb2117.TabIndex = 31
@@ -630,7 +653,7 @@ Partial Class frmSettings
         'cb2113
         '
         Me.cb2113.AutoSize = True
-        Me.cb2113.Location = New System.Drawing.Point(141, 112)
+        Me.cb2113.Location = New System.Drawing.Point(163, 112)
         Me.cb2113.Name = "cb2113"
         Me.cb2113.Size = New System.Drawing.Size(179, 19)
         Me.cb2113.TabIndex = 30
@@ -640,7 +663,7 @@ Partial Class frmSettings
         'cb2874
         '
         Me.cb2874.AutoSize = True
-        Me.cb2874.Location = New System.Drawing.Point(141, 87)
+        Me.cb2874.Location = New System.Drawing.Point(163, 87)
         Me.cb2874.Name = "cb2874"
         Me.cb2874.Size = New System.Drawing.Size(139, 19)
         Me.cb2874.TabIndex = 29
@@ -650,7 +673,7 @@ Partial Class frmSettings
         'cb2868
         '
         Me.cb2868.AutoSize = True
-        Me.cb2868.Location = New System.Drawing.Point(141, 62)
+        Me.cb2868.Location = New System.Drawing.Point(163, 62)
         Me.cb2868.Name = "cb2868"
         Me.cb2868.Size = New System.Drawing.Size(139, 19)
         Me.cb2868.TabIndex = 28
@@ -660,7 +683,7 @@ Partial Class frmSettings
         'cb2862
         '
         Me.cb2862.AutoSize = True
-        Me.cb2862.Location = New System.Drawing.Point(141, 37)
+        Me.cb2862.Location = New System.Drawing.Point(163, 37)
         Me.cb2862.Name = "cb2862"
         Me.cb2862.Size = New System.Drawing.Size(139, 19)
         Me.cb2862.TabIndex = 27
@@ -680,7 +703,7 @@ Partial Class frmSettings
         'cbVB
         '
         Me.cbVB.AutoSize = True
-        Me.cbVB.Location = New System.Drawing.Point(639, 37)
+        Me.cbVB.Location = New System.Drawing.Point(759, 37)
         Me.cbVB.Name = "cbVB"
         Me.cbVB.Size = New System.Drawing.Size(129, 19)
         Me.cbVB.TabIndex = 54
@@ -720,7 +743,7 @@ Partial Class frmSettings
         'cbDT
         '
         Me.cbDT.AutoSize = True
-        Me.cbDT.Location = New System.Drawing.Point(326, 37)
+        Me.cbDT.Location = New System.Drawing.Point(383, 37)
         Me.cbDT.Name = "cbDT"
         Me.cbDT.Size = New System.Drawing.Size(97, 19)
         Me.cbDT.TabIndex = 36
@@ -768,7 +791,7 @@ Partial Class frmSettings
         '
         'btnSaveSetting
         '
-        Me.btnSaveSetting.Location = New System.Drawing.Point(729, 531)
+        Me.btnSaveSetting.Location = New System.Drawing.Point(848, 560)
         Me.btnSaveSetting.Name = "btnSaveSetting"
         Me.btnSaveSetting.Size = New System.Drawing.Size(102, 35)
         Me.btnSaveSetting.TabIndex = 70
@@ -947,7 +970,7 @@ Partial Class frmSettings
         Me.AcceptButton = Me.btnSaveSetting
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(843, 596)
+        Me.ClientSize = New System.Drawing.Size(962, 625)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Name = "frmSettings"
@@ -1045,4 +1068,6 @@ Partial Class frmSettings
     Friend WithEvents Label4 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents cmbPhoneContact As ComboBox
+    Friend WithEvents Label17 As Label
 End Class

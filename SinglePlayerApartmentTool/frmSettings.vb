@@ -68,6 +68,7 @@
         Me.Label7.Text = CFGread.ReadCfgValue("Trevor", file)
         Me.LinkLabel1.Text = CFGread.ReadCfgValue("HowToGetPhoneIndex", file)
         Me.btnSaveSetting.Text = CFGread.ReadCfgValue("SaveButton", file)
+        Label17.Text = ReadCfgValue("PhoneContact", file)
     End Sub
 
     Private Sub txtPhoneKey_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPhoneKey.KeyDown
@@ -116,6 +117,7 @@
             If VS = "1" Then cbVehSpawn.SelectedItem = "Mechanic Drive to your Position" Else cbVehSpawn.SelectedItem = "Nearest Position on Street"
             tbVolume.Value = CInt(ReadCfgValue("Volume", settingFile))
             lblVolumePercentage.Text = tbVolume.Value & "%"
+            cmbPhoneContact.SelectedItem = ReadCfgValue("PhoneContact", settingFile)
             If ReadCfgValue("3AltaStreet", settingFile) = "Enable" Then cb3AS.Checked = True
             If ReadCfgValue("4IntegrityWay", settingFile) = "Enable" Then cb4IW.Checked = True
             If ReadCfgValue("DelPerroHeights", settingFile) = "Enable" Then cbDPH.Checked = True
@@ -178,6 +180,7 @@
             WriteCfgValue("TrevorPhoneIndex", numTrevor.Value, settingFile)
             WriteCfgValue("PointX", txtPointX.Text, settingFile)
             WriteCfgValue("PointY", txtPointY.Text, settingFile)
+            WriteCfgValue("PhoneContact", cmbPhoneContact.SelectedItem, settingFile)
             If cbVehSpawn.SelectedItem = "Mechanic Drive to your Position" Then WriteCfgValue("VehicleSpawn", "1", settingFile) Else WriteCfgValue("VehicleSpawn", "2", settingFile)
             WriteCfgValue("Volume", tbVolume.Value, settingFile)
             If cb3AS.Checked = True Then WriteCfgValue("3AltaStreet", "Enable", settingFile) Else WriteCfgValue("3AltaStreet", "Disabled", settingFile)
@@ -228,5 +231,4 @@
     Private Sub tbVolume_Scroll(sender As Object, e As EventArgs) Handles tbVolume.Scroll
         lblVolumePercentage.Text = tbVolume.Value & "%"
     End Sub
-
 End Class

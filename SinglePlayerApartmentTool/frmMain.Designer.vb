@@ -55,7 +55,7 @@ Partial Class frmMain
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(857, 131)
+        Me.PictureBox1.Size = New System.Drawing.Size(972, 143)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -63,9 +63,9 @@ Partial Class frmMain
         '
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnSettings, Me.btnSpg2Spa, Me.btnWardrobe, Me.btnShopping, Me.btnMenyoo, Me.btnLang})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 131)
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 143)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(857, 27)
+        Me.ToolStrip1.Size = New System.Drawing.Size(972, 27)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -230,10 +230,10 @@ Partial Class frmMain
         'TabControl1
         '
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.Location = New System.Drawing.Point(0, 158)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 170)
         Me.TabControl1.MenuRenderer = Nothing
         Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.Size = New System.Drawing.Size(857, 561)
+        Me.TabControl1.Size = New System.Drawing.Size(972, 569)
         Me.TabControl1.TabCloseButtonImage = Nothing
         Me.TabControl1.TabCloseButtonImageDisabled = Nothing
         Me.TabControl1.TabCloseButtonImageHot = Nothing
@@ -244,7 +244,7 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(857, 719)
+        Me.ClientSize = New System.Drawing.Size(972, 739)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.PictureBox1)
